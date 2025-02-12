@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0021)http://www.sgfish88.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="MSThemeCompatible" content="no">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Mmiopgi</title>
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="static/css/swiper.min.css">
+
+	</head>
+<style type="text/css">
+	.down_load a{
+		float: left;
+		width: 50%;
+		margin-left: 2%;
+		margin-right: 2%;
+		line-height: 50px;
+	}
+</style>
+	<body>
+		<div class="container">
+			<div class="module">
+				<img src="static/picture/bj.png">
+				<div class="down_load" style="top: 18%;width: 88%;left: 27%;height: 4%;">
+					<a class="apkurl down_url">
+						<img src="static/picture/t1.png" width="100%">
+					</a>
+					<!-- <a class="apkurl win_url" href="javascript:void()" >
+						<img src="./web/y1.png" width="100%">
+					</a> -->
+				</div>
+				<!-- Swiper 1-->
+				<div class="down_load" style="bottom: 13%;width: 88%;left: 27%;height: 4%;">
+					<a class="apkurl down_url">
+						<img src="static/picture/t2.png" width="100%">
+					</a>
+					<!-- <a class="apkurl win_url" href="javascript:void()" >
+						<img src="./web/y2.png" width="100%" >
+					</a> -->
+				</div>
+			</div>
+		</div>
+
+
+<script type="text/javascript" src="static/js/swiper.min.js"></script>
+<script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+<script>
+    var swiper1 = new Swiper('#swiper-container1', {
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+	//判断设备
+    function checkIsAppleDevice() {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var ios = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        var iPad = u.indexOf('iPad') > -1;
+        var iPhone = u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1;
+        if (ios || iPad || iPhone) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    //判断是否是 Android 设备
+    function checkandroid(){
+      var u = navigator.userAgent;
+      var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+      return isAndroid;
+    }
+	//点击下载
+    $(".down_url").bind("click", function () {
+        if (!checkandroid()) {
+            window.location.href = "https://h129.me";
+        } else {
+            window.location.href = "https://www.m007yab.com/cocos2.0/myab-13021/apk/com.Sword_Shadow.ow.apk";
+        }
+    })
+    //点击下载
+    $(".win_url").bind("click", function () {
+        if (!checkandroid()) {
+            window.location.href = "https://h129.me";
+        } else {
+            window.location.href = "https://www.m007yab.com/cocos2.0/myab-13021/apk/com.Sword_Shadow.ow.apk";
+        }
+    })
+</script>
+	
+
+
+</body></html>
